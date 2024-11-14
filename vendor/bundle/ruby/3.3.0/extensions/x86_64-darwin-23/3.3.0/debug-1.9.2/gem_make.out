@@ -1,0 +1,19 @@
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+/Users/parolkar/.rvm/rubies/ruby-3.3.0/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-pf35lc sitelibdir\=./.gem.20241114-42979-pf35lc clean
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-pf35lc sitelibdir\=./.gem.20241114-42979-pf35lc
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-pf35lc sitelibdir\=./.gem.20241114-42979-pf35lc install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 debug.bundle ./.gem.20241114-42979-pf35lc/debug
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-pf35lc sitelibdir\=./.gem.20241114-42979-pf35lc clean

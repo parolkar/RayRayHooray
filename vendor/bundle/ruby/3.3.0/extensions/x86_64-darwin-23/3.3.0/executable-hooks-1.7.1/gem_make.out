@@ -1,0 +1,41 @@
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/ray_ray_hooray/vendor/bundle/ruby/3.3.0/gems/executable-hooks-1.7.1/ext/wrapper_installer
+/Users/parolkar/.rvm/rubies/ruby-3.3.0/bin/ruby extconf.rb
+syntax_suggest 2.0.0
+bootsnap 1.18.4
+brakeman 6.2.2
+bundler 2.5.3
+debug 1.9.2
+dotenv 3.1.4
+erb 4.0.3
+foreman 0.88.1
+irb 1.14.1
+irb 1.11.0
+kamal 2.3.0
+nokogiri 1.16.7
+parser 3.3.6.0
+puma 6.4.3
+racc 1.8.1
+rackup 2.2.1
+railties 8.0.0
+rake 13.2.1
+rdoc 6.7.0
+rdoc 6.6.2
+rubocop 1.68.0
+thor 1.3.2
+thruster 0.1.9
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/ray_ray_hooray/vendor/bundle/ruby/3.3.0/gems/executable-hooks-1.7.1/ext/wrapper_installer
+make DESTDIR\= sitearchdir\=./.gem.20241114-50022-p3t2oq sitelibdir\=./.gem.20241114-50022-p3t2oq clean
+make: *** No rule to make target `clean'.  Stop.
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/ray_ray_hooray/vendor/bundle/ruby/3.3.0/gems/executable-hooks-1.7.1/ext/wrapper_installer
+make DESTDIR\= sitearchdir\=./.gem.20241114-50022-p3t2oq sitelibdir\=./.gem.20241114-50022-p3t2oq
+make: Nothing to be done for `all'.
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/ray_ray_hooray/vendor/bundle/ruby/3.3.0/gems/executable-hooks-1.7.1/ext/wrapper_installer
+make DESTDIR\= sitearchdir\=./.gem.20241114-50022-p3t2oq sitelibdir\=./.gem.20241114-50022-p3t2oq install
+make: Nothing to be done for `install'.
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/ray_ray_hooray/vendor/bundle/ruby/3.3.0/gems/executable-hooks-1.7.1/ext/wrapper_installer
+make DESTDIR\= sitearchdir\=./.gem.20241114-50022-p3t2oq sitelibdir\=./.gem.20241114-50022-p3t2oq clean
+make: *** No rule to make target `clean'.  Stop.

@@ -1,0 +1,24 @@
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/date-3.4.0/ext/date
+/Users/parolkar/.rvm/rubies/ruby-3.3.0/bin/ruby extconf.rb
+checking for rb_category_warn()... yes
+checking for timezone in time.h with  -Werror... yes
+checking for altzone in time.h with  -Werror... no
+creating Makefile
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/date-3.4.0/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-rjwi6y sitelibdir\=./.gem.20241114-42979-rjwi6y clean
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/date-3.4.0/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-rjwi6y sitelibdir\=./.gem.20241114-42979-rjwi6y
+compiling date_core.c
+compiling date_parse.c
+compiling date_strftime.c
+compiling date_strptime.c
+linking shared-object date_core.bundle
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/date-3.4.0/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-rjwi6y sitelibdir\=./.gem.20241114-42979-rjwi6y install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 date_core.bundle ./.gem.20241114-42979-rjwi6y
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/date-3.4.0/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-rjwi6y sitelibdir\=./.gem.20241114-42979-rjwi6y clean

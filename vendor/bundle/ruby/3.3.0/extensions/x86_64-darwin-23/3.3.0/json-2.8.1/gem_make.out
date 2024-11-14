@@ -1,0 +1,24 @@
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/json-2.8.1/ext/json/ext/parser
+/Users/parolkar/.rvm/rubies/ruby-3.3.0/bin/ruby extconf.rb
+checking for rb_enc_interned_str() in ruby.h... yes
+checking for rb_hash_new_capa() in ruby.h... yes
+checking for rb_gc_mark_locations() in ruby.h... yes
+checking for rb_hash_bulk_insert() in ruby.h... yes
+checking for rb_category_warn() in ruby.h... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+creating Makefile
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/json-2.8.1/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-mxfrkg sitelibdir\=./.gem.20241114-42979-mxfrkg clean
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/json-2.8.1/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-mxfrkg sitelibdir\=./.gem.20241114-42979-mxfrkg
+compiling parser.c
+linking shared-object json/ext/parser.bundle
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/json-2.8.1/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-mxfrkg sitelibdir\=./.gem.20241114-42979-mxfrkg install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 parser.bundle ./.gem.20241114-42979-mxfrkg/json/ext
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/json-2.8.1/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-mxfrkg sitelibdir\=./.gem.20241114-42979-mxfrkg clean

@@ -1,0 +1,26 @@
+
+<div class="text-center">
+  <div class="flex items-center justify-center mb-3">
+    <div class="flex items-center gap-3">
+      <div class="w-20 h-px bg-gradient-to-r from-transparent to-neutral-200 dark:to-neutral-700"></div>
+      <p class="font-medium"><%= Railsui.config.application_name %></p>
+      <div class="w-20 h-px bg-gradient-to-l from-transparent to-neutral-200 dark:to-neutral-700"></div>
+    </div>
+  </div>
+  <h1 class="font-bold text-3xl mb-6 dark:text-white tracking-tight">Design patterns</h1>
+  <div class="prose prose-neutral dark:prose-invert mx-auto max-w-xl mb-10">
+    <p class="text-lg">Leverage a system of components and patterns to create a professionally designed Rails application.</p>
+  </div>
+</div>
+
+<%= render layout: "railsui/shared/linkables" do %>
+  <%= render "railsui/shared/linkable", path: systems_content_typography_path, title: "Content", description: "Ready-to-use content patterns for everyday markup and content." %>
+
+  <%= render "railsui/shared/linkable", path: systems_forms_input_path, title: "Forms", description: "Form inputs, controls, and pre-designed patterns." %>
+
+  <%= render "railsui/shared/linkable", path: systems_components_accordion_path, title: "Components", description: "Customizable components that you can copy and paste into your apps." %>
+
+  <%= render "railsui/shared/linkable", path: systems_authentication_overview_path, title: "Authentication", description: "A customized authentication experience ready for your app." %>
+
+  <%= render "railsui/shared/linkable", path: systems_mailers_path, title: "Mailers", description: "Some help getting those pesky email templates in good shape." %>
+<% end %>

@@ -1,0 +1,27 @@
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/io-console-0.7.2/ext/io/console
+/Users/parolkar/.rvm/rubies/ruby-3.3.0/bin/ruby extconf.rb
+checking for rb_io_path()... yes
+checking for rb_io_descriptor()... yes
+checking for rb_io_get_write_io()... yes
+checking for rb_io_closed_p()... yes
+checking for rb_io_open_descriptor()... yes
+checking for termios.h... yes
+checking for cfmakeraw() in termios.h... yes
+checking for sys/ioctl.h... yes
+checking for HAVE_RUBY_FIBER_SCHEDULER_H... yes
+creating Makefile
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/io-console-0.7.2/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-x1lshx sitelibdir\=./.gem.20241114-42979-x1lshx clean
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/io-console-0.7.2/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-x1lshx sitelibdir\=./.gem.20241114-42979-x1lshx
+compiling console.c
+linking shared-object io/console.bundle
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/io-console-0.7.2/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-x1lshx sitelibdir\=./.gem.20241114-42979-x1lshx install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 console.bundle ./.gem.20241114-42979-x1lshx/io
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/io-console-0.7.2/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-x1lshx sitelibdir\=./.gem.20241114-42979-x1lshx clean

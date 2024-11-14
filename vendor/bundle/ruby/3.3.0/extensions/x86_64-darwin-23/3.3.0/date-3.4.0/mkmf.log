@@ -1,0 +1,88 @@
+have_func: checking for rb_category_warn()... -------------------- yes
+
+DYLD_LIBRARY_PATH=.:/Users/parolkar/.rvm/rubies/ruby-3.3.0/lib "gcc -o conftest -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0/x86_64-darwin23 -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0/ruby/backward -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef -fno-common -pipe conftest.c  -L. -L/Users/parolkar/.rvm/rubies/ruby-3.3.0/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong     -lruby.3.3  -lpthread  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+DYLD_LIBRARY_PATH=.:/Users/parolkar/.rvm/rubies/ruby-3.3.0/lib "gcc -o conftest -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0/x86_64-darwin23 -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0/ruby/backward -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef -fno-common -pipe conftest.c  -L. -L/Users/parolkar/.rvm/rubies/ruby-3.3.0/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong     -lruby.3.3  -lpthread  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_category_warn; return !p; }
+/* end */
+
+--------------------
+
+have_var: checking for timezone in time.h with  -Werror... -------------------- yes
+
+DYLD_LIBRARY_PATH=.:/Users/parolkar/.rvm/rubies/ruby-3.3.0/lib "gcc -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0/x86_64-darwin23 -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0/ruby/backward -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef -fno-common -pipe   -Werror -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <time.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { const volatile void *volatile p; p = &(&timezone)[0]; return !p; }
+/* end */
+
+--------------------
+
+have_var: checking for altzone in time.h with  -Werror... -------------------- no
+
+DYLD_LIBRARY_PATH=.:/Users/parolkar/.rvm/rubies/ruby-3.3.0/lib "gcc -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0/x86_64-darwin23 -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0/ruby/backward -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef -fno-common -pipe   -Werror -c conftest.c"
+conftest.c:16:55: error: use of undeclared identifier 'altzone'
+   16 | int t(void) { const volatile void *volatile p; p = &(&altzone)[0]; return !p; }
+      |                                                       ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <time.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { const volatile void *volatile p; p = &(&altzone)[0]; return !p; }
+/* end */
+
+--------------------
+

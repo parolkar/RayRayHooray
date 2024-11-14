@@ -1,0 +1,22 @@
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.18.4/ext/bootsnap
+/Users/parolkar/.rvm/rubies/ruby-3.3.0/bin/ruby extconf.rb
+checking for fdatasync() in unistd.h... yes
+checking for whether -D_GNU_SOURCE is accepted as CPPFLAGS... yes
+checking for whether -O3 is accepted as CFLAGS... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+creating Makefile
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.18.4/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-odw6t8 sitelibdir\=./.gem.20241114-42979-odw6t8 clean
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.18.4/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-odw6t8 sitelibdir\=./.gem.20241114-42979-odw6t8
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.18.4/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-odw6t8 sitelibdir\=./.gem.20241114-42979-odw6t8 install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20241114-42979-odw6t8/bootsnap
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.18.4/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-odw6t8 sitelibdir\=./.gem.20241114-42979-odw6t8 clean

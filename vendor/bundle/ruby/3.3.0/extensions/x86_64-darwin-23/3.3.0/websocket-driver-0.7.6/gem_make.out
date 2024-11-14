@@ -1,0 +1,18 @@
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+/Users/parolkar/.rvm/rubies/ruby-3.3.0/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-rnc0gm sitelibdir\=./.gem.20241114-42979-rnc0gm clean
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-rnc0gm sitelibdir\=./.gem.20241114-42979-rnc0gm
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-rnc0gm sitelibdir\=./.gem.20241114-42979-rnc0gm install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20241114-42979-rnc0gm
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-rnc0gm sitelibdir\=./.gem.20241114-42979-rnc0gm clean

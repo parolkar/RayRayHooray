@@ -1,0 +1,18 @@
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.2/ext/stringio
+/Users/parolkar/.rvm/rubies/ruby-3.3.0/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.2/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-wzbhri sitelibdir\=./.gem.20241114-42979-wzbhri clean
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.2/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-wzbhri sitelibdir\=./.gem.20241114-42979-wzbhri
+compiling stringio.c
+linking shared-object stringio.bundle
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.2/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-wzbhri sitelibdir\=./.gem.20241114-42979-wzbhri install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 stringio.bundle ./.gem.20241114-42979-wzbhri
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.2/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-wzbhri sitelibdir\=./.gem.20241114-42979-wzbhri clean

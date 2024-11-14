@@ -1,0 +1,26 @@
+<div class="container mx-auto px-4 py-8">
+   <!-- Reset Chat button -->
+  <%= button_to "Reset Chat", welcome_reset_chat_path, method: :post, class: "btn btn-secondary mb-4" %>
+  <div class="max-w-3xl mx-auto">
+    <!-- Chat messages container -->
+    <div class="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-4 mb-4">
+      <div class="overflow-y-auto space-y-4" id="chat-messages">
+        <% @messages&.each do |message| %>
+          <div class="bg-gray-100 dark:bg-slate-700 rounded-lg p-3">
+            <p class="text-gray-800 dark:text-gray-200"><%= message %></p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+   
+
+    <!-- Chat input form -->
+    <%= form_with url: welcome_chat_path, method: :post, class: "flex gap-2" do |f| %>
+      <%= f.text_field :message, 
+          class: "flex-1 rounded-lg border border-gray-300 dark:border-slate-600 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500 dark:bg-slate-800 dark:text-white",
+          placeholder: "Type your message..." %>
+      <%= f.submit "Send", class: "btn btn-primary px-6" %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,101 @@
+pkg_config: checking for pkg-config for yaml-0.1... -------------------- ["-I/usr/local/Cellar/libyaml/0.2.5/include ", "-L/usr/local/Cellar/libyaml/0.2.5/lib", "-lyaml"]
+
+DYLD_LIBRARY_PATH=.:/Users/parolkar/.rvm/rubies/ruby-3.3.0/lib pkg-config --exists yaml-0.1
+DYLD_LIBRARY_PATH=.:/Users/parolkar/.rvm/rubies/ruby-3.3.0/lib pkg-config --libs yaml-0.1 |
+=> "-L/usr/local/Cellar/libyaml/0.2.5/lib -lyaml\n"
+DYLD_LIBRARY_PATH=.:/Users/parolkar/.rvm/rubies/ruby-3.3.0/lib "gcc -o conftest -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0/x86_64-darwin23 -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0/ruby/backward -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef -fno-common -pipe conftest.c  -L. -L/Users/parolkar/.rvm/rubies/ruby-3.3.0/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong     -lruby.3.3  -lpthread  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+DYLD_LIBRARY_PATH=.:/Users/parolkar/.rvm/rubies/ruby-3.3.0/lib "gcc -o conftest -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0/x86_64-darwin23 -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0/ruby/backward -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef -fno-common -pipe conftest.c  -L. -L/Users/parolkar/.rvm/rubies/ruby-3.3.0/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong     -lruby.3.3 -L/usr/local/Cellar/libyaml/0.2.5/lib -lyaml -lpthread  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+DYLD_LIBRARY_PATH=.:/Users/parolkar/.rvm/rubies/ruby-3.3.0/lib pkg-config --cflags-only-I yaml-0.1 |
+=> "-I/usr/local/Cellar/libyaml/0.2.5/include\n"
+DYLD_LIBRARY_PATH=.:/Users/parolkar/.rvm/rubies/ruby-3.3.0/lib pkg-config --cflags-only-other yaml-0.1 |
+=> "\n"
+DYLD_LIBRARY_PATH=.:/Users/parolkar/.rvm/rubies/ruby-3.3.0/lib pkg-config --libs-only-l yaml-0.1 |
+=> "-lyaml\n"
+package configuration for yaml-0.1
+incflags: -I/usr/local/Cellar/libyaml/0.2.5/include
+cflags: 
+ldflags: -L/usr/local/Cellar/libyaml/0.2.5/lib
+libs: -lyaml
+
+--------------------
+
+find_header: checking for yaml.h... -------------------- yes
+
+DYLD_LIBRARY_PATH=.:/Users/parolkar/.rvm/rubies/ruby-3.3.0/lib "gcc -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0/x86_64-darwin23 -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0/ruby/backward -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0 -I. -I/usr/local/Cellar/libyaml/0.2.5/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef -fno-common -pipe    -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <yaml.h>
+/* end */
+
+--------------------
+
+find_library: checking for yaml_get_version() in -lyaml... -------------------- yes
+
+DYLD_LIBRARY_PATH=.:/Users/parolkar/.rvm/rubies/ruby-3.3.0/lib "gcc -o conftest -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0/x86_64-darwin23 -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0/ruby/backward -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0 -I. -I/usr/local/Cellar/libyaml/0.2.5/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef -fno-common -pipe  conftest.c  -L. -L/Users/parolkar/.rvm/rubies/ruby-3.3.0/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/Cellar/libyaml/0.2.5/lib     -lyaml -lruby.3.3 -lyaml  -lyaml -lpthread  "
+conftest.c:14:57: error: use of undeclared identifier 'yaml_get_version'
+   14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))yaml_get_version; return !p; }
+      |                                                         ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))yaml_get_version; return !p; }
+/* end */
+
+DYLD_LIBRARY_PATH=.:/Users/parolkar/.rvm/rubies/ruby-3.3.0/lib "gcc -o conftest -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0/x86_64-darwin23 -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0/ruby/backward -I/Users/parolkar/.rvm/rubies/ruby-3.3.0/include/ruby-3.3.0 -I. -I/usr/local/Cellar/libyaml/0.2.5/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef -fno-common -pipe  conftest.c  -L. -L/Users/parolkar/.rvm/rubies/ruby-3.3.0/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/Cellar/libyaml/0.2.5/lib     -lyaml -lruby.3.3 -lyaml  -lyaml -lpthread  "
+ld: warning: ignoring duplicate libraries: '-lyaml'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void yaml_get_version();
+15: int t(void) { yaml_get_version(); return 0; }
+/* end */
+
+--------------------
+

@@ -1,0 +1,36 @@
+<% content_for :header do %>
+    <header class="bg-cover bg-center relative bg-no-repeat" style="background-image: url(<%= asset_url("railsui/fusion.png") %>);" data-controller="nav">
+      <div class="dark:bg-slate-900">
+        <%= render "shared/nav_menu" %>
+      </div>
+      <div class="container mx-auto sm:py-24 pb-10 px-4 relative z-10 flex flex-wrap items-center justify-between">
+        <div class="xl:w-2/5 w-full xl:text-left text-center xl:pr-16">
+          <p class="text-primary-600 font-medium mb-6 lg:mt-0 mt-2 dark:text-primary-500">Starter Kit for LLM Applications</p>
+          <h1 class="h2 md:display-5">Build LLM Apps faster with <br class="md:block hidden" /> Rails 8 + RailsUI + Raix </h1>
+          <p class="my-6 text-slate-700 dark:text-slate-400 text-lg">This rails starter app allows you to quickly build production ready LLM apps. You can also use <a href="https://codebuff.com/referrals/ref-4b612ec1-6724-47b8-a54d-11da9757ccc3"><b>codebuff</b></a> to build features with help of AI. </p>
+          <div class="xl:flex grid grid-cols-1 gap-4">
+            <%= link_to welcome_chat_path, class: "btn btn-lg  btn-primary gap-2 group" do %>
+              <%= icon "paper-airplane", class: "size-5 stroke-slate-400 group-hover:stroke-primary-600" %>
+              <span>Chat with Agent</span>
+            <% end %>
+          </div>
+        </div>
+        <div class="xl:w-3/5 w-full xl:my-0 mt-6 mb-10">
+          <div class="flex justify-center relative">
+            <%= image_tag "railsui/hero-image.jpg", alt: "Team", class: "max-w-full xl:max-w-2xl 2xl:max-w-3xl object-cover rounded-3xl relative z-20 shadow-2xl shadow-slate-500/20" %>
+            <div
+            class="w-[650px] h-[650px] bg-primary-500/10 absolute -bottom-10 left-5 rounded-full z-0 blur-2xl sm:block hidden">
+            </div>
+            <div
+            class="w-[450px] h-[450px] bg-pink-500/10 absolute -top-10 left-5 rounded-full z-0 blur-2xl sm:block hidden">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  <% end %>
+  
+  
+  
+  <%= render "shared/footer" %>
+  

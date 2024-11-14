@@ -1,0 +1,184 @@
+<%
+  html_content = yield :html
+  erb_content = yield :erb
+  haml_content = yield :haml
+  js_content = yield :js
+  bash_content = yield :bash
+  ruby_content = yield :ruby
+  css_content = yield :css
+%>
+
+<div data-controller="railsui-code" class="mt-5 mb-8 first:mt-0 last:mb-0 bg-gradient-to-br from-neutral-700 to-neutral-800 rounded-lg overflow-clip dark:border dark:border-neutral-700 selection:bg-neutral-300/90 selection:text-neutral-800 relative scrollbar border-transparent" x-data="{ active: '<%= local_assigns[:active_tab] %>' }">
+  <div class="bg-neutral-800">
+    <ul class="flex items-center justify-start space-x-2 border-b border-neutral-700 px-3">
+      <% if content_for?(:html) %>
+        <li class="flex items-center">
+          <a href="#html"
+          @click.prevent="active = 'html'"
+          :class="active == 'html' ? 'text-pink-400 border-pink-400' : 'border-transparent text-white/90'"
+          class="-ml-2 pl-5 pr-3 py-3 font-mono  text-sm border-b-2 hover:text-pink-400  hover:border-pink-400"><%= local_assigns[:html_filename] %></a>
+          <span class="w-px h-11 bg-gradient-to-b from-neutral-600 to-neutral-700 transform rotate-[20deg] block ml-2"></span>
+        </li>
+      <% end %>
+      <% if content_for?(:erb) %>
+        <li class="flex items-center">
+          <a href="#erb"
+          @click.prevent="active = 'erb'"
+          :class="active == 'erb' ? 'text-rose-400 border-rose-400' : 'border-transparent text-white/90'"
+          class="-ml-3 pl-6 pr-4 py-3 font-mono text-sm border-b-2 hover:text-rose-400 hover:border-rose-400"><%= local_assigns[:erb_filename] %></a>
+          <span class="w-px h-11 bg-gradient-to-b from-neutral-600 to-neutral-700 transform rotate-[20deg] block ml-2"></span>
+        </li>
+      <% end %>
+
+      <% if content_for(:haml) %>
+        <li class="flex items-center">
+          <a href="#haml"
+          @click.prevent="active = 'haml'"
+          :class="active == 'haml' ? 'text-sky-400 border-sky-400' : 'border-transparent text-white/90'"
+          class="-ml-3 pl-5 pr-3 py-3 font-mono text-sm border-b-2 hover:text-sky-400 hover:border-sky-400"><%= local_assigns[:haml_filename] %></a>
+          <span class="w-px h-11 bg-gradient-to-b from-neutral-600 to-neutral-700 transform rotate-[20deg] block ml-2"></span>
+        </li>
+      <% end %>
+
+      <% if content_for?(:bash) %>
+        <li class="flex items-center">
+          <a href="#bash"
+          @click.prevent="active = 'bash'"
+          :class="active == 'bash' ? 'text-cyan-400 border-cyan-400' : 'border-transparent text-white/90'"
+          class="-ml-2 pl-5 pr-3 py-3 font-mono  text-sm border-b-2 hover:text-cyan-400  hover:border-cyan-400">bash</a>
+          <span class="w-px h-11 bg-gradient-to-b from-neutral-600 to-neutral-700 transform rotate-[20deg] block ml-2"></span>
+        </li>
+      <% end %>
+
+      <% if content_for(:js) %>
+        <li class="flex items-center">
+          <a href="#js"
+          @click.prevent="active = 'js'"
+          :class="active == 'js' ? 'text-amber-400 border-amber-400' : 'border-transparent text-white/90'"
+          class="-ml-3 pl-5 pr-3 py-3 font-mono text-sm border-b-2 hover:text-amber-400 hover:border-amber-400"><%= local_assigns[:js_filename] %></a>
+          <span class="w-px h-11 bg-gradient-to-b from-neutral-600 to-neutral-700 transform rotate-[20deg] block ml-2"></span>
+        </li>
+      <% end %>
+
+      <% if content_for(:ruby) %>
+        <li class="flex items-center">
+          <a href="#ruby"
+          @click.prevent="active = 'ruby'"
+          :class="active == 'ruby' ? 'text-rose-400 border-rose-400' : 'border-transparent text-white/90'"
+          class="-ml-3 pl-5 pr-3 py-3 font-mono text-sm border-b-2 hover:text-rose-400 hover:border-rose-400"><%= local_assigns[:ruby_filename] %></a>
+          <span class="w-px h-11 bg-gradient-to-b from-neutral-600 to-neutral-700 transform rotate-[20deg] block ml-2"></span>
+        </li>
+      <% end %>
+
+      <% if content_for?(:css) %>
+        <li class="flex items-center">
+          <a href="#css"
+          @click.prevent="active = 'css'"
+          :class="active == 'css' ? 'text-fuchsia-400 border-fuchsia-400' : 'border-transparent text-white/90'"
+          class="-ml-2 pl-5 pr-3 py-3 font-mono text-sm border-b-2 hover:text-fuchsia-400 hover:border-fuchsia-400"><%= local_assigns[:css_filename] %></a>
+          <span class="w-px h-11 bg-gradient-to-b from-neutral-600 to-neutral-700 transform rotate-[20deg] block ml-2"></span>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <div role="tabpanels" class="overflow-y-auto max-h-[650px] scrollbar scrollbar-track-neutral-950 scrollbar-thumb-neutral-500">
+    <% if content_for?(:html) %>
+      <div role="tabpanel"
+      x-show="active == 'html'"
+      data-controller="railsui-clipboard"
+      >
+        <button
+    data-action="click->railsui-clipboard#copy"
+          class="bg-white/10 backdrop-blur-sm p-1 rounded-lg absolute right-2 top-2 hover:bg-gradient-to-br hover:to-pink-600 hover:from-pink-400 transition ease-in-out w-duration-200"
+          type="button">
+          <%= icon "clipboard", class: "stroke-current text-white select-none size-5" %>
+        </button>
+        <pre><code data-railsui-code-target="snippet" data-railsui-clipboard-target="content" class="language-html scrollbar"><%= html_content.to_param.strip %></code></pre>
+      </div>
+    <% end %>
+    <% if content_for(:erb) %>
+      <div
+        role="tabpanel"
+        x-show="active == 'erb'"
+        data-controller="railsui-clipboard"
+        >
+        <button data-action="click->railsui-clipboard#copy"
+          class="bg-white/10 backdrop-blur-sm p-1 rounded-lg absolute right-2 top-2 hover:bg-gradient-to-br hover:to-rose-600 hover:from-rose-400 transition ease-in-out w-duration-200"
+          type="button">
+          <%= icon "clipboard", class: "stroke-current text-white select-none size-5" %>
+        </button>
+        <pre><code data-railsui-code-target="snippet" data-railsui-clipboard-target="content" class="language-erb scrollbar"><%= erb_content.to_param.strip %></code></pre>
+      </div>
+    <% end %>
+    <% if content_for(:haml) %>
+      <div
+        role="tabpanel"
+        x-show="active == 'haml'"
+        data-controller="railsui-clipboard"
+        >
+        <button data-action="click->railsui-clipboard#copy"
+          class="bg-white/10 backdrop-blur-sm p-1 rounded-lg absolute right-2 top-2 hover:bg-gradient-to-br hover:to-sky-600 hover:from-sky-400 transition ease-in-out w-duration-200"
+          type="button">
+          <%= icon "clipboard", class: "stroke-current text-white select-none size-5" %>
+        </button>
+        <pre><code data-railsui-code-target="snippet" data-railsui-clipboard-target="content" class="language-haml scrollbar"><%= haml_content.to_param.strip %></code></pre>
+      </div>
+    <% end %>
+    <% if content_for(:bash) %>
+      <div
+        role="tabpanel"
+        x-show="active == 'bash'"
+        data-controller="railsui-clipboard"
+        >
+        <button data-action="click->railsui-clipboard#copy"
+          class="bg-white/10 backdrop-blur-sm p-1 rounded-lg absolute right-2 top-2 hover:bg-gradient-to-br hover:to-cyan-600 hover:from-cyan-400 transition ease-in-out w-duration-200"
+          type="button">
+          <%= icon "clipboard", class: "stroke-current text-white select-none size-5" %>
+        </button>
+        <pre><code data-railsui-code-target="snippet" data-railsui-clipboard-target="content" class="language-bash scrollbar"><%= bash_content.to_param.strip %></code></pre>
+      </div>
+    <% end %>
+    <% if content_for(:js) %>
+      <div
+        role="tabpanel"
+        x-show="active == 'js'"
+        data-controller="railsui-clipboard"
+        >
+        <button data-action="click->railsui-clipboard#copy"
+          class="bg-white/10 backdrop-blur-sm p-1 rounded-lg absolute right-2 top-2 hover:bg-gradient-to-br hover:to-amber-600 hover:from-amber-400 transition ease-in-out w-duration-200"
+          type="button">
+          <%= icon "clipboard", class: "stroke-current text-white select-none size-5" %>
+        </button>
+        <pre><code data-railsui-code-target="snippet" data-railsui-clipboard-target="content" class="language-javascript scrollbar"><%= js_content.to_param.strip %></code></pre>
+      </div>
+    <% end %>
+    <% if content_for(:ruby) %>
+      <div
+        role="tabpanel"
+        x-show="active == 'ruby'"
+        data-controller="railsui-clipboard"
+        >
+        <button data-action="click->railsui-clipboard#copy"
+          class="bg-white/10 backdrop-blur-sm p-1 rounded-lg absolute right-2 top-2 hover:bg-gradient-to-br hover:to-rose-600 hover:from-rose-400 transition ease-in-out w-duration-200"
+          type="button">
+          <%= icon "clipboard", class: "stroke-current text-white select-none size-5" %>
+        </button>
+        <pre><code data-railsui-code-target="snippet" data-railsui-clipboard-target="content" class="language-ruby scrollbar"><%= ruby_content.to_param.strip %></code></pre>
+      </div>
+    <% end %>
+     <% if content_for(:css) %>
+      <div
+        role="tabpanel"
+        x-show="active == 'css'"
+        data-controller="railsui-clipboard"
+        >
+        <button data-action="click->railsui-clipboard#copy"
+          class="bg-white/10 backdrop-blur-sm p-1 rounded-lg absolute right-2 top-2 hover:bg-gradient-to-br hover:to-fuchsia-600 hover:from-fuchsia-400 transition ease-in-out w-duration-200"
+          type="button">
+          <%= icon "clipboard", class: "stroke-current text-white select-none size-5" %>
+        </button>
+        <pre><code data-railsui-code-target="snippet" data-railsui-clipboard-target="content" class="language-css scrollbar"><%= css_content.to_param.strip %></code></pre>
+      </div>
+    <% end %>
+  </div>
+</div>

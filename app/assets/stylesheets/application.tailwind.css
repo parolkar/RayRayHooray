@@ -1,0 +1,7 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+@import "railsui/actiontext";
+@import "railsui/forms";
+@import "railsui/navigation";
+@import "tailwindcss/utilities";

@@ -1,0 +1,302 @@
+hound:
+  about:
+    title: About
+    description: Company or organization about page.
+    tags:
+      - marketing
+    path: rui_about_path
+    add_to_nav: true
+  pricing:
+    title: Pricing
+    description: SaaS-like pricing; 3 plans types by default.
+    tags:
+      - marketing
+    path: rui_pricing_path
+    add_to_nav: true
+  dashboard:
+    title: Dashboard
+    description: Admin dashboard for a CRM type of tool.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_dashboard_path
+    add_to_nav: true
+  projects:
+    title: Projects
+    description: Projects index view
+    namespace: admin
+    tags:
+      - admin
+    path: rui_projects_path
+    add_to_nav: true
+  project:
+    title: Project
+    description: The detail view of a given project
+    namespace: admin
+    tags:
+      - admin
+    path: rui_project_path
+    add_to_nav: false
+  messages:
+    title: Messages
+    description: A message view for inbound and outgoing messages within the app.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_messages_path
+    add_to_nav: true
+  message:
+    title: Message
+    description: The detail view of a given message.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_message_path
+    add_to_nav: false
+  assignments:
+    title: Assignments
+    description: Assignments view for a current user account.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_assignments_path
+    add_to_nav: true
+  calendar:
+    title: Calendar
+    description: Calendar view for an example events page.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_calendar_path
+    add_to_nav: true
+  people:
+    title: People
+    description: User view of all people in the app.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_people_path
+    add_to_nav: true
+  profile:
+    title: Profile
+    description: A profile view with activity for an individual user.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_profile_path
+    add_to_nav: false
+  activity:
+    title: Activity
+    description: A global activity view for a team.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_activity_path
+    add_to_nav: true
+  settings:
+    title: Settings
+    description: A settings view for the account.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_settings_path
+    add_to_nav: false
+  notifications:
+    title: Notifications
+    description: Notification controls for a given account.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_notifications_path
+    add_to_nav: false
+  billing:
+    title: Billing
+    description: A billing page used to manage a subscription and seat count.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_billing_path
+    add_to_nav: false
+  team:
+    title: Team
+    description: A team management view.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_team_path
+    add_to_nav: false
+  integrations:
+    title: Integrations
+    description: A view for managing integrations and their respective states.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_integrations_path
+    add_to_nav: false
+shepherd:
+  about:
+    title: About
+    description: Company or organization about page.
+    tags:
+      - marketing
+    path: rui_about_path
+    add_to_nav: true
+  pricing:
+    title: Pricing
+    description: SaaS-like pricing; 3 plans types by default.
+    tags:
+      - marketing
+    path: rui_pricing_path
+    add_to_nav: true
+  dashboard:
+    title: Dashboard
+    description: Admin dashboard for a property management tool.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_dashboard_path
+    add_to_nav: true
+  properties:
+    title: Properties
+    description: Properties index view
+    namespace: admin
+    tags:
+      - admin
+    path: rui_properties_path
+    add_to_nav: true
+  inbox:
+    title: Inbox
+    description: An inbox for inbound and outgoing messages within the app.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_inbox_path
+    add_to_nav: true
+  calendar:
+    title: Calendar
+    description: Calendar view page.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_calendar_path
+    add_to_nav: true
+  insights:
+    title: Insights
+    description: Stats view for property insights.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_insights_path
+    add_to_nav: true
+  bookings:
+    title: Bookings
+    description: Bookings index with filtering.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_bookings_path
+    add_to_nav: true
+  new_booking:
+    title: New Booking
+    description: Add new booking.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_new_booking_path
+    add_to_nav: false
+  booking:
+    title: "Booking"
+    description: Booking show view
+    namespace: admin
+    tags:
+      - admin
+    path: rui_booking_path
+    add_to_nav: false
+  edit_booking:
+    title: Edit Booking
+    description: Edit booking.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_edit_booking_path
+    add_to_nav: false
+  help_center:
+    title: Help Center
+    description: Help center hub.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_help_center_path
+    add_to_nav: true
+  changelog:
+    title: Changelog
+    description: A view for app updates and changes.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_changelog_path
+    add_to_nav: true
+  api:
+    title: API
+    description: API landing page with advanced navigation.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_api_path
+    add_to_nav: true
+  privacy_policy:
+    title: Privacy Policy
+    description: A simple template for a privacy policy.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_privacy_policy_path
+    add_to_nav: false
+  terms:
+    title: Terms
+    description: A simple template for Terms of Service.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_terms_path
+    add_to_nav: false
+  contact:
+    title: Contact
+    description: A simple landing page for contact.
+    namespace: admin
+    tags:
+      - admin
+    path: rui_contact_path
+    add_to_nav: false
+  account_payment_methods:
+    title: "Account: Payment Methods"
+    description: "Payment method UI for the user profile"
+    namespace: admin
+    tags:
+      - admin
+    path: rui_account_payment_methods_path
+    add_to_nav: false
+  account_payouts:
+    title: "Account: Payouts"
+    description: "Payouts UI for the user profile"
+    namespace: admin
+    tags:
+      - admin
+    path: rui_account_payouts_path
+    add_to_nav: false
+  account_notifications:
+    title: "Account: Notifications"
+    description: "Notifications settings for the user profile"
+    namespace: admin
+    tags:
+      - admin
+    path: rui_account_notifications_path
+    add_to_nav: false
+  account_preferences:
+    title: "Account: Preferences"
+    description: "Preferences settings for the user profile"
+    namespace: admin
+    tags:
+      - admin
+    path: rui_account_preferences_path
+    add_to_nav: false

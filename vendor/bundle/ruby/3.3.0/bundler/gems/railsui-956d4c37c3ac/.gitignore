@@ -1,0 +1,12 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+/node_modules
+.DS_Store
+/app/assets/builds/railsui/*
+.vscode

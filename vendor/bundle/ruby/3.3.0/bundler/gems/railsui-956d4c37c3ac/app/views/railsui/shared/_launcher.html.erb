@@ -1,0 +1,119 @@
+<!-- Rails UI Launcher - Only visible in development -->
+<div data-controller="railsui-dropdown">
+  <div class="rui-launcher">
+    <button type="button" data-turbo="false" data-action="click->railsui-dropdown#toggle click@window->railsui-dropdown#hide">
+      <%= image_tag "r.svg", class: "rui-r invert" %>
+    </button>
+    <nav class="hidden" data-railsui-dropdown-target="menu">
+      <ul>
+        <li>
+          <%= link_to "Configuration", railsui.root_path, data: { turbo: false } %>
+        </li>
+
+        <li>
+          <%= link_to "Components", railsui.systems_path, data: { turbo: false } %>
+        </li>
+
+         <li>
+          <%= link_to "Pages", railsui.root_path(anchor: "pages"), data: { turbo: false } %>
+        </li>
+
+        <li>
+          <%= link_to "Docs", "https://railsui.com/docs", data: { turbo: false }, target: :_blank %>
+        </li>
+
+        <li>
+          <%= link_to "Launchpad", railsui.start_url, data: { turbo: false } %>
+        </li>
+
+        <li>
+          <%= link_to "Routes", railsui.routes_path, data: { turbo: false } %>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <style>
+    .rui-launcher {
+      position: fixed;
+      left: 6px;
+      bottom: 6px;
+      z-index: 9999;
+    }
+
+    .rui-launcher button {
+      border: none;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+      background: rgb(2,0,36);
+      background: linear-gradient(43deg, rgba(2,0,36,1) 0%, rgba(10,10,84,1) 64%, rgba(63,0,64,1) 100%);
+    }
+
+    .rui-launcher button:focus {
+      outline-color: #f1f5f9;
+      outline-offset: 4px;
+      outline-style: solid;
+    }
+
+    .rui-launcher button:hover {
+      box-shadow: none;
+    }
+
+    .rui-launcher nav.hidden {
+      display: none;
+      opacity: 0;
+    }
+
+    .rui-launcher nav {
+      position: absolute;
+      left: 0px;
+      bottom: 48px;
+      background: rgb(2,0,36);
+      background: linear-gradient(43deg, rgba(2,0,36,1) 0%, rgba(10,10,84,1) 64%, rgba(63,0,64,1) 100%);
+      border-radius: 6px;
+      min-width: 220px;
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      padding: 0.6rem 0;
+      backdrop-filter: blur(12px);
+    }
+
+    .rui-launcher nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    .rui-launcher nav a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.8);
+      display: block;
+      padding: 0.3rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .rui-launcher nav a:hover {
+      text-decoration: underline
+    }
+
+    .rui-launcher .rui-r {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      fill: white;
+    }
+
+    @media screen and (max-width: 767px) {
+      .rui-launcher {
+        display: none;
+      }
+    }
+  </style>
+</div>

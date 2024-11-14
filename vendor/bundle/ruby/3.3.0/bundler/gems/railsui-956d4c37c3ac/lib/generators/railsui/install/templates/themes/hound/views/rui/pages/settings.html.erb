@@ -1,0 +1,66 @@
+<% content_for :body_classes, "text-slate-800 dark:bg-slate-900 dark:text-slate-100 bg-white" %>
+
+<% content_for :header do%>
+  <%= render "rui/shared/admin/nav", { header_title: "Account" } %>
+<% end %>
+
+<%= render "rui/shared/admin/settings_nav" %>
+
+<div class="container mx-auto pb-24 px-4 my-16">
+  <div class="max-w-4xl mx-auto">
+    <h1 class="mb-2 md:h2 h3">Account</h1>
+    <div class="prose-lg prose-slate dark:prose-invert mb-16">
+      <p>Take control of your account.</p>
+    </div>
+
+    <h3 class="h6 mb-6">Profile</h3>
+
+    <%= form_tag("#", method: "post") do %>
+      <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-16 sm:gap-y-10 gap-6 items-center">
+        <div>
+          <%= label_tag :name, "Name", class: "form-label" %>
+          <%= text_field_tag :name, nil, class: "form-input" %>
+        </div>
+        <div>
+          <div class="flex items-center space-x-6 form-group">
+            <div class="shrink-0">
+              <%= image_tag demo_avatar_url, class: "h-16 w-16 object-cover rounded-full border-2 border-slate-100 dark:border-slate-600 shadow-inner", alt: "John Smith" %>
+            </div>
+            <%= label_tag :avatar, class: "block" do %>
+              <span class="sr-only">Choose profile photo</span>
+              <%= file_field_tag :avatar, class: "form-file" %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-10 dark:border-slate-600">
+
+      <h3 class="h6 mb-6">Personal information</h3>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-16 sm:gap-y-10 gap-6 items-center">
+        <div>
+          <%= label_tag :email, "Email", class: "form-label" %>
+          <%= email_field_tag :email, nil, placeholder: "email@example.com", class: "form-input" %>
+        </div>
+        <div>
+          <%= label_tag :password, "Password", class: "form-label" %>
+          <%= password_field_tag :password, nil, class: "form-input" %>
+        </div>
+        <div>
+          <%= label_tag :password_confirmation, "Password confirmation", class: "form-label" %>
+          <%= password_field_tag :password_confirmation, nil, class: "form-input" %>
+        </div>
+        <div>
+          <%= label_tag :current_password, "Current password", class: "form-label" %>
+          <%= password_field_tag :current_password, nil, class: "form-input" %>
+        </div>
+      </div>
+
+      <div class="border-t py-6 mt-10 flex items-center gap-4 dark:border-slate-600">
+        <%= submit_tag "Update", class: "btn btn-primary" %>
+        <%= link_to "Cancel", "#", class: "font-medium text-slate-600 hover:text-primary-600 text-sm px-2 py-2 dark:text-slate-400 dark:hover:text-primary-400" %>
+      </div>
+    <% end %>
+  </div>
+</div>

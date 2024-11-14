@@ -1,0 +1,166 @@
+<div id="tab-with-icons">
+  <%= render layout: example, locals: { heading: "With icons", section: "Tab" } do %>
+
+  <%= render preview "zinc" do %>
+<div data-controller="railsui-tabs" data-railsui-tabs-active-tab="py-2 px-4 border-b border-primary-500 flex items-center space-x-3 bg-white whitespace-nowrap text-primary-500 dark:bg-primary-500 dark:text-white dark:border-primary-600 rounded-t"
+  data-railsui-tabs-inactive-tab="py-2 px-4 flex items-center space-x-3 whitespace-nowrap border-b bg-white dark:border-zinc-600 dark:bg-transparent">
+
+<div class="border-zinc-200 border-b text-zinc-600 dark:text-zinc-200 dark:border-zinc-600 text-[15px]">
+  <nav role="navigation" class="-mb-px flex items-center flex-wrap font-heading">
+    <a href="#"
+data-railsui-tabs-target="tab" data-action="click->railsui-tabs#change"
+      class="py-2 px-4 border-b border-primary-500 flex items-center space-x-3 bg-white whitespace-nowrap text-primary-500 dark:bg-primary-500 dark:text-white rounded-t">
+      <%= icon "chat-bubble-oval-left-ellipsis", class:  "size-5" %>
+      <span>Activity</span>
+    </a>
+    <a href="#" data-railsui-tabs-target="tab" data-action="click->railsui-tabs#change" class="py-2 px-4 flex items-center space-x-3 whitespace-nowrap border-b bg-white dark:border-zinc-600 dark:bg-transparent">
+      <%= icon "user-circle", class:  "size-5" %>
+      <span>Account</span>
+    </a>
+    <a href="#" data-railsui-tabs-target="tab" data-action="click->railsui-tabs#change" class="py-2 px-4 flex items-center space-x-3 whitespace-nowrap border-b bg-white dark:border-zinc-600 dark:bg-transparent">
+      <%= icon "credit-card", class:  "size-5" %>
+      <span>Billing</span>
+    </a>
+    <a href="#" data-railsui-tabs-target="tab" data-action="click->railsui-tabs#change" class="py-2 px-4 flex items-center space-x-3 whitespace-nowrap border-b bg-white dark:border-zinc-600 dark:bg-transparent">
+      <%= icon "users", class:  "size-5" %>
+      <span>Team</span>
+    </a>
+  </nav>
+</div>
+<div class="p-4 prose prose-zinc dark:prose-invert" data-railsui-tabs-target="panel">
+  Some activities...
+</div>
+
+<div class="hidden p-4 prose prose-zinc dark:prose-invert" data-railsui-tabs-target="panel">
+  Account information...
+</div>
+
+<div class="hidden p-4 prose prose-zinc dark:prose-invert" data-railsui-tabs-target="panel">
+  Billing information...
+</div>
+<div class="hidden p-4 prose prose-zinc dark:prose-invert" data-railsui-tabs-target="panel">
+  Team information...
+</div>
+</div>
+<% end %>
+
+<% content_for :example, flush: true do %>
+<% content_for :html, flush: true do %>
+<div data-controller="railsui-tabs" data-railsui-tabs-active-tab="py-2 px-4 border-b border-primary-500 flex items-center space-x-3 bg-white whitespace-nowrap text-primary-500 dark:bg-primary-500 dark:text-white dark:border-primary-600 rounded-t"
+data-railsui-tabs-inactive-tab="py-2 px-4 flex items-center space-x-3 whitespace-nowrap border-b bg-white dark:border-zinc-600 dark:bg-transparent">
+
+  <div class="border-zinc-200 border-b text-zinc-600 dark:text-zinc-200 dark:border-zinc-600 text-[15px]">
+    <nav role="navigation" class="-mb-px flex items-center flex-wrap font-heading">
+      <a href="#" data-railsui-tabs-target="tab" data-action="click->railsui-tabs#change"
+        class="py-2 px-4 border-b border-primary-500 flex items-center space-x-3 bg-white whitespace-nowrap text-primary-500 dark:bg-primary-500 dark:text-white rounded-t">
+        <%%= icon "chat-bubble-oval-left-ellipsis", class:  "size-5" %>
+        <span>Activity</span>
+      </a>
+      <a href="#" data-railsui-tabs-target="tab" data-action="click->railsui-tabs#change" class="py-2 px-4 flex items-center space-x-3 whitespace-nowrap border-b bg-white dark:border-zinc-600 dark:bg-transparent">
+        <%%= icon "user-circle", class:  "size-5" %>
+        <span>Account</span>
+      </a>
+      <a href="#" data-railsui-tabs-target="tab" data-action="click->railsui-tabs#change" class="py-2 px-4 flex items-center space-x-3 whitespace-nowrap border-b bg-white dark:border-zinc-600 dark:bg-transparent">
+        <%%= icon "credit-card", class:  "size-5" %>
+        <span>Billing</span>
+      </a>
+      <a href="#" data-railsui-tabs-target="tab" data-action="click->railsui-tabs#change" class="py-2 px-4 flex items-center space-x-3 whitespace-nowrap border-b bg-white dark:border-zinc-600 dark:bg-transparent">
+        <%%= icon "users", class:  "size-5" %>
+        <span>Team</span>
+      </a>
+    </nav>
+  </div>
+  <div class="p-4 prose prose-zinc dark:prose-invert" data-railsui-tabs-target="panel">
+    Some activities...
+  </div>
+
+  <div class="hidden p-4 prose prose-zinc dark:prose-invert" data-railsui-tabs-target="panel">
+    Account information...
+  </div>
+
+  <div class="hidden p-4 prose prose-zinc dark:prose-invert" data-railsui-tabs-target="panel">
+    Billing information...
+  </div>
+  <div class="hidden p-4 prose prose-zinc dark:prose-invert" data-railsui-tabs-target="panel">
+    Team information...
+  </div>
+</div>
+<% end %>
+
+<% content_for :erb, flush: true do %>
+<div data-controller="railsui-tabs" data-railsui-tabs-active-tab="py-2 px-4 border-b border-primary-500 flex items-center space-x-3 bg-white whitespace-nowrap text-primary-500 dark:bg-primary-500 dark:text-white dark:border-primary-600 rounded-t" data-railsui-tabs-inactive-tab="py-2 px-4 flex items-center space-x-3 whitespace-nowrap border-b bg-white dark:border-zinc-600 dark:bg-transparent">
+
+  <div class="border-zinc-200 border-b text-zinc-600 dark:text-zinc-200 dark:border-zinc-600 text-[15px]">
+    <nav role="navigation" class="-mb-px flex items-center flex-wrap font-heading">
+      <%%= link_to "#", class: "py-2 px-4 border-b border-primary-500 flex items-center space-x-3 bg-white whitespace-nowrap text-primary-500 dark:bg-primary-500 dark:text-white rounded-t", data: { railsui_tabs_target: "tab", action: "click->railsui-tabs#change" } do %>
+        <%%= icon "chat-bubble-oval-left-ellipsis", class: "size-5" %>
+        <span>Activity</span>
+      <%% end %>
+
+      <%%= link_to "#", class: "py-2 px-4 flex items-center space-x-3 whitespace-nowrap border-b bg-white dark:border-zinc-600 dark:bg-transparent", data: { railsui_tabs_target: "tab", action: "click->railsui-tabs#change" } do %>
+        <%%= icon "user-circle", class: "size-5" %>
+        <span>Account</span>
+      <%% end %>
+
+      <%%= link_to "#", class: "py-2 px-4 flex items-center space-x-3 whitespace-nowrap border-b bg-white dark:border-zinc-600 dark:bg-transparent", data: { railsui_tabs_target: "tab", action: "click->railsui-tabs#change" } do %>
+        <%%= icon "credit-card", class: "size-5" %>
+        <span>Billing</span>
+      <%% end %>
+      <%%= link_to "#", class: "py-2 px-4 flex items-center space-x-3 whitespace-nowrap border-b bg-white dark:border-zinc-600 dark:bg-transparent", data: { railsui_tabs_target: "tab", action: "click->railsui-tabs#change" } do %>
+        <%%= icon "users", class: "size-5" %>
+        <span>Team</span>
+      <%% end %>
+    </nav>
+  </div>
+  <div class="p-4 prose prose-zinc dark:prose-invert" data-railsui-tabs-target="panel">
+    Some activities...
+  </div>
+
+  <div class="hidden p-4 prose prose-zinc dark:prose-invert" data-railsui-tabs-target="panel">
+    Account information...
+  </div>
+
+  <div class="hidden p-4 prose prose-zinc dark:prose-invert" data-railsui-tabs-target="panel">
+    Billing information...
+  </div>
+  <div class="hidden p-4 prose prose-zinc dark:prose-invert" data-railsui-tabs-target="panel">
+    Team information...
+  </div>
+</div>
+<% end %>
+
+<% content_for :haml, flush: true do %>
+%div{"data-controller" => "railsui-tabs", "data-railsui-tabs-active-tab" => "py-2 px-4 border-b border-primary-500 flex items-center space-x-3 bg-white whitespace-nowrap text-primary-500 dark:bg-primary-500 dark:text-white dark:border-primary-600 rounded-t", "data-railsui-tabs-inactive-tab" => "py-2 px-4 flex items-center space-x-3 whitespace-nowrap border-b bg-white dark:border-zinc-600 dark:bg-transparent"}
+  .border-zinc-200.border-b.text-zinc-600.dark:text-zinc-200.dark:border-zinc-600{class: "text-[15px]"}
+    %nav.-mb-px.flex.items-center.flex-wrap.font-heading{role: "navigation"}
+      = link_to "#", class: "py-2 px-4 border-b border-primary-500 flex items-center space-x-3 bg-white whitespace-nowrap text-primary-500 dark:bg-primary-500 dark:text-white rounded-t", data: { railsui_tabs_target: "tab", action: "click->railsui-tabs#change" } do
+        = icon "chat-bubble-oval-left-ellipsis", class: "size-5"
+        %span Activity
+      = link_to "#", class: "py-2 px-4 flex items-center space-x-3 whitespace-nowrap border-b bg-white dark:border-zinc-600 dark:bg-transparent", data: { railsui_tabs_target: "tab", action: "click->railsui-tabs#change" } do
+        = icon "user-circle", class: "size-5"
+        %span Account
+      = link_to "#", class: "py-2 px-4 flex items-center space-x-3 whitespace-nowrap border-b bg-white dark:border-zinc-600 dark:bg-transparent", data: { railsui_tabs_target: "tab", action: "click->railsui-tabs#change" } do
+        = icon "credit-card", class: "size-5"
+        %span Billing
+      = link_to "#", class: "py-2 px-4 flex items-center space-x-3 whitespace-nowrap border-b bg-white dark:border-zinc-600 dark:bg-transparent", data: { railsui_tabs_target: "tab", action: "click->railsui-tabs#change" } do
+        = icon "users", class: "size-5"
+        %span Team
+  .p-4.prose.prose-zinc.dark:prose-invert{"data-railsui-tabs-target" => "panel"}
+    Some activities...
+  .hidden.p-4.prose.prose-zinc.dark:prose-invert{"data-railsui-tabs-target" => "panel"}
+    Account information...
+  .hidden.p-4.prose.prose-zinc.dark:prose-invert{"data-railsui-tabs-target" => "panel"}
+    Billing information...
+  .hidden.p-4.prose.prose-zinc.dark:prose-invert{"data-railsui-tabs-target" => "panel"}
+    Team information...
+<% end %>
+
+<% content_for :js, flush: true do %>
+import { RailsuiTabs } from 'railsui-stimulus'
+application.register('railsui-tabs', RailsuiTabs)
+<% end %>
+
+  <%= render_snippet html_filename: "tabs.html", erb_filename: "_tabs.html.erb", haml_filename: "_tabs.html.haml", js_filename: "index.js" %>
+<% end %>
+<% end %>
+</div>

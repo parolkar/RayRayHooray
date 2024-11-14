@@ -1,0 +1,18 @@
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/parolkar/.rvm/rubies/ruby-3.3.0/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-aons2j sitelibdir\=./.gem.20241114-42979-aons2j clean
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-aons2j sitelibdir\=./.gem.20241114-42979-aons2j
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-aons2j sitelibdir\=./.gem.20241114-42979-aons2j install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20241114-42979-aons2j/skiptrace/internal
+
+current directory: /Users/parolkar/workspace/inloop.studio/experiments/rails8world/rails8_ui/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20241114-42979-aons2j sitelibdir\=./.gem.20241114-42979-aons2j clean

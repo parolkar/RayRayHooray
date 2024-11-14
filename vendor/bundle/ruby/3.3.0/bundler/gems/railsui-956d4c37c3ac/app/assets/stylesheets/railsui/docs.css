@@ -1,0 +1,14 @@
+.railsui {
+  [data-controller="anchor"] {
+    @apply relative cursor-pointer;
+  }
+
+  [data-controller="anchor"]::before {
+    content: "#";
+    @apply absolute transition text-neutral-400 font-mono font-semibold text-xl -left-4 top-0 opacity-0 duration-300;
+  }
+
+  [data-controller="anchor"]:hover::before {
+    @apply opacity-100;
+  }
+}
