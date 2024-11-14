@@ -1,6 +1,6 @@
 # README
 
-This project aimed at simplifying the development of LLM applications using Ruby on Rails 8.0.0, RailsUI, and Raix. This guide will help you understand how to set up and use these tools together to build powerful LLM apps efficiently.
+This project aims to simplify the development of LLM applications using Ruby on Rails 8.0.0, RailsUI, and Raix. This guide will help you understand how to set up and use these tools together to build powerful LLM apps efficiently. You can also use [Codebuff](https://codebuff.com/referrals/ref-4b612ec1-6724-47b8-a54d-11da9757ccc3) along with this to develop features with AI.
 
 ![Dashboard](public/RayRayHooray_Dashboard.png)
 
@@ -15,6 +15,7 @@ This project aimed at simplifying the development of LLM applications using Ruby
 
 ```
 $ bundle install
+$ EDITOR=vim bin/rails credentials:edit # to supply your openai keys 
 $ bin/dev
 
 ```
