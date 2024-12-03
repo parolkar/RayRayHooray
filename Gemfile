@@ -76,4 +76,4 @@ gem "bundler-unload", "~> 1.0"
 
 gem "rubygems-bundler", "~> 1.4"
 
-gem "raix", "~> 0.4.5"
+gem "raix", "~> 0.4.7"
