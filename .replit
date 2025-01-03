@@ -1,4 +1,4 @@
-run = "RAILS_ENV=development bundle exec rails server --binding=0.0.0.0"
+run = "RAILS_ENV=development bundle exec ./bin/dev"
 hidden = [".bundle"]
 entrypoint = "app/controllers/application_controller.rb"
 modules = ["ruby-3.3", "python-3.11"]

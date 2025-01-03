@@ -11,14 +11,40 @@ This project aims to simplify the development of LLM applications using Ruby on 
 * Chat Interface and Raix for extensible LLM funcitonality.
 
 
-# INSTALL
+# INSTALL (Normal Mode)
 
 ```
 $ bundle install
-$ EDITOR=vim bin/rails credentials:edit # to supply your openai keys 
-$ bin/dev
+$ EDITOR=vim bundle exec bin/rails credentials:edit # to supply your openai keys 
+$ bundle exec bin/setup
+$ bundle exec bin/dev
 
 ```
+
+# INSTALL (on Replit)
+
+You may need to add your keys
+```
+~/RayRayHooray$ EDITOR=vim bundle exec bin/rails credentials:edit  # to supply your openai/open_router keys 
+
+```
+The LLM Inference API credentials may look like this.
+
+```
+open_router: 
+  access_token: <your_key>
+openai:
+  access_token: <your_key>
+```
+
+By default the config hosts may not allow your replit domain so you may need to edit the  config/application.rb and add the replit host names. Something like below.
+
+```
+ config.hosts << "2259aadd-YOUR-RANDOM-DOMAIN.sisko.replit.dev"
+```
+
+
+
 
 # LICENSE
 Copyright (c) [2024] Abhishek Parolkar
