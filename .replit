@@ -1,6 +1,6 @@
 run = "RAILS_ENV=development bundle exec ./bin/dev"
 hidden = [".bundle"]
-entrypoint = "app/controllers/application_controller.rb"
+entrypoint = "README.md"
 modules = ["ruby-3.3", "python-3.11"]
 
 [env]
