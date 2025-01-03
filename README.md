@@ -23,6 +23,9 @@ $ bundle exec bin/dev
 
 # INSTALL (on Replit)
 
+You can either start with Replit Template (https://replit.com/@parolkar/RayRayHooray)  or create a fresh replit project by providing this github repo url.
+Once you have the project ready, open shell tab and add keys like below.
+
 You may need to add your keys
 ```
 ~/RayRayHooray$ EDITOR=vim bundle exec bin/rails credentials:edit  # to supply your openai/open_router keys 
@@ -37,13 +40,15 @@ openai:
   access_token: <your_key>
 ```
 
+Once the keys added added, press "run" button. 
+You should see error related to "Blocked host".
 By default the config hosts may not allow your replit domain so you may need to edit the  config/application.rb and add the replit host names. Something like below.
 
 ```
  config.hosts << "2259aadd-YOUR-RANDOM-DOMAIN.sisko.replit.dev"
 ```
 
-
+That's it!
 
 
 # LICENSE
