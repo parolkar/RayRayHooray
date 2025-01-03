@@ -1,0 +1,24 @@
+run = "RAILS_ENV=development bundle exec rails server --binding=0.0.0.0"
+hidden = [".bundle"]
+entrypoint = "app/controllers/application_controller.rb"
+modules = ["ruby-3.3", "python-3.11"]
+
+[env]
+#PATH = "$PATH:/home/runner/RayRayHooray/.local/share/gem/ruby/3.3.0/bin"
+RACK_MINI_PROFILER = "off"
+PIDFILE = "/tmp/rails_server.pid"
+
+[nix]
+channel = "stable-24_05"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix"]
+
+
+[deployment]
+run = "RAILS_ENV=production bundle exec rails server --binding=0.0.0.0"
+deploymentTarget = "gce"
+
+[[ports]]
+localPort = 3000
+externalPort = 80

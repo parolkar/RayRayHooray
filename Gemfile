@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby '3.3.0'
+ruby '3.3.1'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "8.0.0"
@@ -47,7 +47,7 @@ gem "thruster", require: false
 
 #Rialsui
 gem "railsui", github: "getrailsui/railsui", branch: "main"
-gem "executable-hooks"
+#gem "executable-hooks"
 gem "stringio","3.1.2"
 
 group :development, :test do
@@ -74,6 +74,6 @@ end
 
 gem "bundler-unload", "~> 1.0"
 
-gem "rubygems-bundler", "~> 1.4"
+#gem "rubygems-bundler", "~> 1.4"
 
 gem "raix", "~> 0.4.5"

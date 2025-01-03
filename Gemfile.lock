@@ -114,7 +114,7 @@ GEM
     crass (1.0.6)
     cssbundling-rails (1.4.1)
       railties (>= 6.0.0)
-    date (3.4.0)
+    date (3.4.1)
     debug (1.9.2)
       irb (~> 1.10)
       reline (>= 0.3.8)
@@ -125,7 +125,6 @@ GEM
     et-orbi (1.2.11)
       tzinfo
     event_stream_parser (1.0.0)
-    executable-hooks (1.7.1)
     faraday (2.12.0)
       faraday-net_http (>= 2.0, < 3.4)
       json
@@ -182,7 +181,7 @@ GEM
     multipart-post (2.4.1)
     net-http (0.5.0)
       uri
-    net-imap (0.5.1)
+    net-imap (0.5.4)
       date
       net-protocol
     net-pop (0.1.2)
@@ -314,9 +313,6 @@ GEM
       faraday (>= 1)
       faraday-multipart (>= 1)
     ruby-progressbar (1.13.0)
-    rubygems-bundler (1.4.5)
-      bundler-unload (>= 1.0.2)
-      executable-hooks (>= 1.5.0)
     rubyzip (2.3.2)
     securerandom (0.3.2)
     selenium-webdriver (4.26.0)
@@ -412,7 +408,6 @@ DEPENDENCIES
   capybara
   cssbundling-rails
   debug
-  executable-hooks
   jbuilder
   jsbundling-rails
   kamal
@@ -422,7 +417,6 @@ DEPENDENCIES
   railsui!
   raix (~> 0.4.5)
   rubocop-rails-omakase
-  rubygems-bundler (~> 1.4)
   selenium-webdriver
   solid_cable
   solid_cache
@@ -436,7 +430,7 @@ DEPENDENCIES
   web-console
 
 RUBY VERSION
-   ruby 3.3.0p0
+   ruby 3.3.1p55
 
 BUNDLED WITH
    2.5.3
