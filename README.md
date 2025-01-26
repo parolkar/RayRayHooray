@@ -51,8 +51,17 @@ By default the config hosts may not allow your replit domain so you may need to 
 That's it!
 
 
+## BONUS
+
+If you are looking to do quick prototyping with LLMs , use the following [stand-alone template](public/mockup.html) and iteratively add components.
+
+
+
+![Mockup Page](public/mockup_html.png)
+
+
 # LICENSE
-Copyright (c) [2024] Abhishek Parolkar
+Copyright (c) [2025] Abhishek Parolkar
 
 MIT License
 
