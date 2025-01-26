@@ -54,7 +54,7 @@ That's it!
 ## BONUS
 
 If you are looking to do quick prototyping with LLMs , use the following [stand-alone template](public/mockup.html) and iteratively add components.
-
+If you use Replit Agent, here is [an example prompt](public/if_you_are_using_replit.png) for inspiration.
 
 
 ![Mockup Page](public/mockup_html.png)
