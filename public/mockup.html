@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+  <head>
+     <!-- Template for rapid prototyping developed by @parolkar on GitHub 
+      INSTRUCTION: LLMs and AI Agents can use this template to develop the mockup by modifying only specific parts of the HTML. This is TailwindCSS based single page theme. This is best suited for a Single Page mockups.
+      -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style>
+      /* Tailwind theme color overrides */
+      :root {
+        --russian-violet: #0E0C3E;
+        --turquoise: #68E8D2;
+        --mauve: #DAA0EF;
+        --coral: #F68668;
+      }
+
+      /* Custom Tailwind theme */
+      @layer base {
+        :root {
+          --color-primary: var(--russian-violet);
+          --color-secondary: var(--turquoise);
+          --color-accent: var(--mauve);
+          --color-highlight: var(--coral);
+        }
+      }
+
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+
+      /* Additional utility classes */
+      .bg-primary { background-color: var(--russian-violet); }
+      .text-primary { color: var(--russian-violet); }
+      .bg-secondary { background-color: var(--turquoise); }
+      .text-secondary { color: var(--turquoise); }
+      .bg-accent { background-color: var(--mauve); }
+      .text-accent { color: var(--mauve); }
+      .bg-highlight { background-color: var(--coral); }
+      .text-highlight { color: var(--coral); }
+    </style>
+  </head>
+  <body>
+
+    <div class="min-h-screen">
+      <div class="fixed top-0 left-0 right-0 z-50">
+        <nav class="mx-auto max-w-screen-xl rounded-lg border shadow-lg overflow-hidden p-2 bg-white/90 border-stone-200 shadow-stone-950/5 backdrop-blur-sm">
+        <div class="flex items-center">
+          <a href="https://x.com/parolkar" class="font-sans antialiased text-sm text-current ml-2 mr-2 block py-1 font-semibold">@parolkar</a>
+          <hr class="ml-1 mr-1.5 hidden h-5 w-px border-l border-t-0 border-secondary-dark lg:block" />
+          <div class="hidden lg:block">
+            <ul class="mt-4 flex flex-col gap-x-3 gap-y-1.5 lg:mt-0 lg:flex-row lg:items-center">
+              <li>
+                <a href="#" class="font-sans antialiased text-sm text-current flex items-center py-1.5 px-2.5 rounded-md align-middle select-none transition-all duration-300 ease-in bg-transparent text-stone-600 hover:text-stone-800 dark:hover:text-white hover:bg-stone-200 focus:bg-stone-200 focus:text-stone-800 dark:focus:text-white">
+                  <span class="grid place-items-center shrink-0 me-2.5"><svg width="1.5em" height="1.5em" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4"><path d="M7 18H10.5H14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 14H7.5H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 10H8.5H10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 2L16.5 2L21 6.5V19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 20.5V6.5C3 5.67157 3.67157 5 4.5 5H14.2515C14.4106 5 14.5632 5.06321 14.6757 5.17574L17.8243 8.32426C17.9368 8.43679 18 8.5894 18 8.74853V20.5C18 21.3284 17.3284 22 16.5 22H4.5C3.67157 22 3 21.3284 3 20.5Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14 5V8.4C14 8.73137 14.2686 9 14.6 9H18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  </span>
+                  <small class="font-sans antialiased text-sm text-current">Pages</small>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-sans antialiased text-sm text-current flex items-center py-1.5 px-2.5 rounded-md align-middle select-none transition-all duration-300 ease-in bg-transparent text-stone-600 hover:text-stone-800 dark:hover:text-white hover:bg-stone-200 focus:bg-stone-200 focus:text-stone-800 dark:focus:text-white">
+                  <span class="grid place-items-center shrink-0 me-2.5"><svg width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4"><path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.271 18.3457C4.271 18.3457 6.50002 15.5 12 15.5C17.5 15.5 19.7291 18.3457 19.7291 18.3457" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  </span>
+                  <small class="font-sans antialiased text-sm text-current">Account</small>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-sans antialiased text-sm text-current flex items-center py-1.5 px-2.5 rounded-md align-middle select-none transition-all duration-300 ease-in bg-transparent text-stone-600 hover:text-stone-800 dark:hover:text-white hover:bg-stone-200 focus:bg-stone-200 focus:text-stone-800 dark:focus:text-white">
+                  <span class="grid place-items-center shrink-0 me-2.5"><svg width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4"><path d="M21 7.35304L21 16.647C21 16.8649 20.8819 17.0656 20.6914 17.1715L12.2914 21.8381C12.1102 21.9388 11.8898 21.9388 11.7086 21.8381L3.30861 17.1715C3.11814 17.0656 3 16.8649 3 16.647L2.99998 7.35304C2.99998 7.13514 3.11812 6.93437 3.3086 6.82855L11.7086 2.16188C11.8898 2.06121 12.1102 2.06121 12.2914 2.16188L20.6914 6.82855C20.8818 6.93437 21 7.13514 21 7.35304Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.52844 7.29357L11.7086 11.8381C11.8898 11.9388 12.1102 11.9388 12.2914 11.8381L20.5 7.27777" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 21L12 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11.6914 11.8285L3.89139 7.49521C3.49147 7.27304 3 7.56222 3 8.01971V16.647C3 16.8649 3.11813 17.0656 3.30861 17.1715L11.1086 21.5048C11.5085 21.727 12 21.4378 12 20.9803V12.353C12 12.1351 11.8819 11.9344 11.6914 11.8285Z" fill="currentColor" stroke="currentColor" stroke-linejoin="round"></path></svg>
+                  </span>
+                  <small class="font-sans antialiased text-sm text-current">Blocks</small>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-sans antialiased text-sm text-current flex items-center py-1.5 px-2.5 rounded-md align-middle select-none transition-all duration-300 ease-in bg-transparent text-stone-600 hover:text-stone-800 dark:hover:text-white hover:bg-stone-200 focus:bg-stone-200 focus:text-stone-800 dark:focus:text-white">
+                  <span class="grid place-items-center shrink-0 me-2.5"><svg width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4"><path d="M7 6L17 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 9L17 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9 17H15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 12H2.6C2.26863 12 2 12.2686 2 12.6V21.4C2 21.7314 2.26863 22 2.6 22H21.4C21.7314 22 22 21.7314 22 21.4V12.6C22 12.2686 21.7314 12 21.4 12H21M3 12V2.6C3 2.26863 3.26863 2 3.6 2H20.4C20.7314 2 21 2.26863 21 2.6V12M3 12H21" stroke="currentColor"></path></svg>
+                  </span>
+                  <small class="font-sans antialiased text-sm text-current">Docs</small>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button class="items-center justify-center border align-middle select-none font-sans font-medium text-center duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:cursor-not-allowed focus:shadow-none text-sm py-1.5 px-3 shadow-sm hover:shadow bg-stone-800 hover:bg-stone-700 relative bg-gradient-to-b from-stone-700 to-stone-800 border-stone-900 text-stone-50 rounded-lg hover:bg-gradient-to-b hover:from-stone-800 hover:to-stone-800 hover:border-stone-900 after:absolute after:inset-0 after:rounded-[inherit] after:box-shadow after:shadow-[inset_0_1px_0px_rgba(255,255,255,0.25),inset_0_-2px_0px_rgba(0,0,0,0.35)] after:pointer-events-none transition antialiased hidden lg:ml-auto lg:inline-block">Sign In</button>
+          <button class="place-items-center border align-middle select-none font-sans font-medium text-center transition-all duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-sm min-w-[34px] min-h-[34px] rounded-md bg-transparent border-transparent text-stone-800 hover:bg-stone-200/10 hover:border-stone-600/10 shadow-none hover:shadow-none ml-auto grid lg:hidden"><svg width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4"><path d="M3 5H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 12H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 19H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </button>
+        </div>
+      </nav>
+      </div>
+      <main class="w-full pt-16">
+        <!-- Hero Section -->
+        <div class="bg-primary text-white py-20">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+              <div class="lg:w-1/2 mb-10 lg:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                  Transform Your Business with Our Cloud-Based Solution
+                </h1>
+                <p class="text-xl mb-8 text-turquoise">
+                  Streamline your workflow, boost productivity, and reduce operational costs with our intelligent platform.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                  <button class="bg-secondary text-primary font-bold py-3 px-8 rounded-lg hover:bg-turquoise hover:bg-opacity-80 transition-all cursor-pointer transform hover:scale-105">
+                    Start Free Trial
+                  </button>
+                  <button class="bg-transparent border-2 border-secondary text-secondary font-bold py-3 px-8 rounded-lg hover:bg-secondary hover:text-primary transition-all cursor-pointer transform hover:scale-105">
+                    Watch Demo
+                  </button>
+                </div>
+              </div>
+              <div class="lg:w-1/2 flex justify-center">
+                <div class="relative">
+                  <div class="absolute -top-4 -right-4 w-72 h-72 bg-accent rounded-full opacity-20 blur-2xl"></div>
+                  <div class="absolute -bottom-8 -left-8 w-72 h-72 bg-highlight rounded-full opacity-20 blur-2xl"></div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="relative z-10 w-full max-w-lg rounded-lg shadow-2xl" viewBox="0 0 100 100" fill="none">
+                    <rect x="15" y="15" width="70" height="70" fill="var(--color-primary)"/>
+                    <rect x="35" y="35" width="70" height="70" fill="var(--color-accent)"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto max-w-xl">
+          <div class="my-8">
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+          </div>
+          <div class="mb-6 max-w-xl">
+            <div class="flex h-56 w-full items-center justify-center rounded bg-stone-200"><svg width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-16 w-16 text-surface-dark"><path d="M21 3.6V20.4C21 20.7314 20.7314 21 20.4 21H3.6C3.26863 21 3 20.7314 3 20.4V3.6C3 3.26863 3.26863 3 3.6 3H20.4C20.7314 3 21 3.26863 21 3.6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 16L10 13L21 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 10C14.8954 10 14 9.10457 14 8C14 6.89543 14.8954 6 16 6C17.1046 6 18 6.89543 18 8C18 9.10457 17.1046 10 16 10Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </div>
+          </div>
+          <div class="my-8">
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+          </div>
+          <div class="my-8">
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+          </div>
+          <div class="my-8">
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+          </div>
+          <div class="my-8">
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+            <div class="mb-2 h-2 w-full rounded-full bg-stone-200"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-primary text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="col-span-1 md:col-span-2">
+            <h3 class="text-xl font-bold mb-4">About Us</h3>
+            <p class="text-turquoise mb-4">
+              We're dedicated to transforming businesses through innovative cloud solutions, making enterprise-grade technology accessible and efficient for companies of all sizes.
+            </p>
+          </div>
+          <div class="col-span-1">
+            <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-turquoise hover:text-white transition-colors">Home</a></li>
+              <li><a href="#" class="text-turquoise hover:text-white transition-colors">Features</a></li>
+              <li><a href="#" class="text-turquoise hover:text-white transition-colors">Pricing</a></li>
+              <li><a href="#" class="text-turquoise hover:text-white transition-colors">About Us</a></li>
+            </ul>
+          </div>
+          <div class="col-span-1">
+            <h3 class="text-xl font-bold mb-4">Contact</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-turquoise hover:text-white transition-colors">Contact Us</a></li>
+              <li><a href="#" class="text-turquoise hover:text-white transition-colors">Support</a></li>
+              <li><a href="#" class="text-turquoise hover:text-white transition-colors">Privacy Policy</a></li>
+              <li><a href="#" class="text-turquoise hover:text-white transition-colors">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-turquoise/20 mt-8 pt-8 text-center">
+          <p class="text-sm text-turquoise">
+            <a href="https://x.com/parolkar">© 2025 @parolkar . All rights reserved.</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
