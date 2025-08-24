@@ -17,7 +17,6 @@ This project aims to simplify the development of LLM applications using Ruby on 
 $ bundle install
 $ EDITOR=vim bundle exec bin/rails credentials:edit # to supply your openai keys 
 $ bundle exec bin/setup
-$ bin/rails assets:precompile
 $ bundle exec bin/dev
 
 ```

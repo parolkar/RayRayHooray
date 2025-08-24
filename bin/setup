@@ -15,8 +15,12 @@ FileUtils.chdir APP_ROOT do
   puts "== Installing dependencies =="
   system("bundle check") || system!("bundle install")
 
+ 
   # Install JavaScript dependencies
+  system("brew  install node yarn")
   system("yarn install --check-files")
+  puts "\n== Ensuring Propshaft setup =="
+  system! "bin/rails assets:precompile"
 
   # puts "\n== Copying sample files =="
   # unless File.exist?("config/database.yml")
