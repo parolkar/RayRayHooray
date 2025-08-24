@@ -50,6 +50,11 @@ By default the config hosts may not allow your replit domain so you may need to 
 
 That's it!
 
+## Integrated Coding Agent in the application via Tidewave
+
+This makes it super easy to add new features to the application fast with AI. All you have to do is visit http://localhost:3000/tidewave and start the chat with agent to make changes in realtime. Watch [this youtube video](https://youtu.be/xc4SF9HNS9A) to see it in action.
+
+![Tidewave Coding Agent](public/tidewave_screenshot.png)
 
 ## BONUS
 
